@@ -1,0 +1,53 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: 50px calc(100vh - 50px);
+  grid-template-columns: 50vw 50vw;
+  grid-template-areas:
+    "header-area header-area"
+    "code-area preview-area";
+}
+
+#header {
+  font-family: sans-serif;
+  grid-area: header-area;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  padding: 0 1em;
+  line-height: 50px;
+}
+
+#code {
+  grid-area: code-area;
+  margin: 0;
+  padding: 0.2em;
+  box-sizing: border-box;
+  border: 0.2em solid black;
+  border-top: 0;
+}
+
+#code * {
+  outline: none;
+}
+
+#preview {
+  grid-area: preview-area;
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0.2em solid black;
+  border-top: 0;
+  border-left: 0;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  font-family: 'Ubuntu Mono', 'Andale Mono', Consolas, Monaco, monospace;
+  line-height: 1.1;
+}

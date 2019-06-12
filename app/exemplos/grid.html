@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+
+    <style type="text/css">
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 2em;
+            list-style: none;
+        }
+
+        #main {
+            display: grid;
+            grid-template-rows: 15vh 10vh 55vh 20vh;
+            grid-template-areas: "header-area header-area" 
+                                 "nav-area nav-area"
+                                 "article-area aside-area"
+                                 "footer-area footer-area";
+        }
+
+        #main header {
+            background-color: lightskyblue;
+            grid-area: header-area;
+        }
+
+        #main nav {
+            background-color: lightsalmon;
+            grid-area: nav-area;
+        }
+
+        #main article {
+            background-color: lightgreen;
+            grid-area: article-area;
+        }
+
+        #main aside {
+            background-color: lightpink;
+            grid-area: aside-area;
+        }
+
+        #main footer {
+            background-color: lightcoral;
+            grid-area: footer-area;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            #main {
+                grid-template-areas: "header-area" 
+                                     "article-area"
+                                     "aside-area"
+                                     "footer-area";
+            }
+
+            #main nav {
+                grid-area: header-area;
+                width: 50px;
+                height: 50px;
+                margin-top: 2em;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section id="main">
+        <header>Cabeçalho</header>
+        <nav>Menu</nav>
+        <article>Conteúdo</article>
+        <aside>Aside</aside>
+        <footer>Rodapé</footer>
+    </section>
+
+</body>
+
+</html>

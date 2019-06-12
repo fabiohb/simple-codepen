@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position Fixed</title>
+
+    <style type="text/css">
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 2em;
+            list-style: none;
+        }
+
+        .cabecalho {
+            background-color: red;
+            position: fixed;
+            width: 100%;
+        }
+
+        .texto {
+            background-color: lightgray;
+            padding: 2.5em 1.5em;
+        }
+
+        .flutuante {
+            background-color: green;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 150px;
+            height: 150px;
+            z-index: 100;
+            opacity: 0.5;
+        }
+
+        .rodape {
+            background-color: blue;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecalho">Cabeçalho</div>
+    <div class="texto">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum iure aperiam molestiae nesciunt! Eveniet eum dolorem nostrum, saepe illum architecto culpa harum, porro iure libero perspiciatis consectetur! Harum, aut.</p>
+    </div>
+    <div class="flutuante">Flutuante</div>
+    <div class="rodape">Rodapé</div>
+</body>
+</html>

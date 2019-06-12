@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display</title>
+
+    <style type="text/css">
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 2em;
+            list-style: none;
+        }
+
+        .exemplo {
+            color: white;
+            text-align: justify;
+        }
+
+        .exemplo:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .item_pri {
+            background-color: blue;
+        }
+
+        .item_seg {
+            background-color: red;
+        }
+
+        .item_ter {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul class="exemplo">
+        <li class="item item_pri">Primeiro</li>
+        <li class="item item_seg">Segundo</li>
+        <li class="item item_ter">Terceiro</li>
+    </ul>
+
+    <p style="text-align: justify">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi numquam magnam minus facere, nobis soluta. Ex saepe fugiat commodi. Maiores rem corporis odit ducimus aut possimus dolorum, pariatur libero nisi!
+    </p>
+
+</body>
+</html>

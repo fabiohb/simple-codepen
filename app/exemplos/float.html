@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float</title>
+
+    <style type="text/css">
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 2em;
+            list-style: none;
+        }
+
+        html { background-color: lightgrey; }
+        header { background-color: lightskyblue; }
+        main { background-color: lightsalmon; }
+        footer { background-color: lightpink; }
+
+        aside {
+            width: 10em;
+        }
+
+        aside.left {
+            background-color: lightgreen;
+            float: left;
+            height: 20em;
+        }
+
+        aside.right {
+            background-color: lightcoral;
+            float: right;
+        }
+
+        main, section {
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        Cabeçalho
+    </header>
+
+    <main>
+        <aside class="left">
+            Menu Esquerdo
+        </aside>
+
+        <aside class="right">
+            Menu Direito
+        </aside>
+
+        <section>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nesciunt eius, obcaecati aliquam explicabo quod, ratione veritatis quisquam laborum nostrum officiis quam exercitationem sint quae dolores at sapiente reiciendis. Molestiae.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti praesentium illo, aperiam facere adipisci distinctio, placeat dolore incidunt molestiae nulla a nobis. Quod similique corporis, natus temporibus dolores nam eligendi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iure. Delectus optio aliquam explicabo facere eveniet rerum sint possimus eaque et ducimus saepe, exercitationem commodi est assumenda, recusandae ipsam atque.
+        </section>
+    </main>
+
+    <footer>
+        Rodapé
+    </footer>
+</body>
+</html>

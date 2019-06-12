@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flexbox</title>
+
+    <style type="text/css">
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 2em;
+            list-style: none;
+        }
+
+        .conteiner {
+            background-color: orange;
+            padding: 1em;
+            height: 25em;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row wrap;
+
+            justify-content: space-between;
+            align-content: center;
+            align-items: flex-end;
+        }
+
+        .item {
+            background-color: blue;
+            color: white;
+            border: 1px solid white;
+            width: 150px;
+            text-align: center;
+            line-height: 100px;
+
+
+        }
+
+        .itm1 {
+            width: 200px;
+            height: 100px;
+            flex-shrink: 2;
+        }
+
+        .itm2 {
+            height: 120px;
+            flex-grow: 2;
+        }
+
+        .itm3 {
+            height: 140px;
+            flex-grow: 3;
+        }
+
+        .itm4 {
+            height: 160px;
+            order: -1;
+            flex-basis: 200px;
+            /* flex: [grow] [shrink] [basis] ; */
+        }
+
+        .itm5 {
+            height: 180px;
+        }
+
+        .itm6 {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conteiner">
+        <div class="item itm1">1</div>
+        <div class="item itm2">2</div>
+        <div class="item itm3">3</div>
+        <div class="item itm4">4</div>
+        <div class="item itm5">5</div>
+        <div class="item itm6">6</div>
+    </div>
+
+</body>
+
+</html>

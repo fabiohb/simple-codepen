@@ -1,0 +1,12 @@
+{
+  "name": "coffeeweb",
+  "version": "1.0.0",
+  "private": false,
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "start": "gulp serve"
+  }
+}

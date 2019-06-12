@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Model</title>
+
+    <style type="text/css">
+        div.container {
+            border: 1px solid black;
+        }
+
+        div.container div {
+            border: 0.2em solid blue;
+            margin: 0.2em;
+            padding: 0.2em;
+        }
+
+        div.container div:first-child {
+            margin-bottom: 0.8em;
+            outline: 0.2em solid red;
+            height: 3em;
+            overflow: auto;
+        }
+
+        .box {
+            border: 1px dotted green;
+        }
+
+        div.container div:last-child {
+            min-width: 20em;
+            max-width: 30em;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laborum quos beatae magni necessitatibus, animi dolor veritatis odit in ad obcaecati est. Dicta eaque impedit aut iusto iure provident quaerat!
+        </div>
+        <div>
+            <span class="box">
+                Box model
+            </span>
+        </div>
+        <div>Box model</div>
+        <div>Box model</div>
+    </div>
+</body>
+</html>
